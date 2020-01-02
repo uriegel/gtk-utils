@@ -1,4 +1,4 @@
-const addon = require('./build/Debug/giotest')
+const addon = require('../build/Debug/gtk-utils')
 
 const rett = addon.test("org.gnome.desktop.interface", "gtk-theme")
 let start = process.hrtime.bigint()

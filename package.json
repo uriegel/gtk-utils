@@ -5,7 +5,7 @@
   "main": "./build/release/gtk-utils",
   "gypfile": true,
   "scripts": {
-    "debug": "node --nolazy --inspect-brk=9229 index.js",
+    "debug": "node --nolazy --inspect-brk=9229 dev/index.js",
     "build:dev": "node-gyp build --debug",
     "rebuild:dev": "node-gyp rebuild --debug",
     "clean": "node-gyp clean"
@@ -16,7 +16,7 @@
   "keywords": [
     "cpp",
     "addon"
-  ],  
+  ],
   "dependencies": {
     "node-addon-api": "^2.0.0"
   }

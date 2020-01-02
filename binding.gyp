@@ -1,8 +1,8 @@
 {
     "targets": [{
-        "target_name": "giotest",
+        "target_name": "gtk-utils",
         "sources": [ 
-            'main.cpp',
+            'addon.cpp',
         ],
         'include_dirs': [
             "<!@(node -p \"require('node-addon-api').include\")"
