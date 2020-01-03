@@ -4,12 +4,8 @@
         'conditions': [
             ['OS=="linux"', {
                 "sources": [ 
-                    'addon.cpp',
+                    'addon.cpp'
                 ],
-                'include_dirs': [
-                    "<!@(node -p \"require('node-addon-api').include\")"
-                ],
-                'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
                 "libraries": ["<!@(pkg-config --libs gio-2.0)"],
                 "cflags": [
                     "-Wall", 
@@ -27,8 +23,17 @@
                 'link_settings': {
                     "libraries": [ 
                     ]
-                }
-            }
-        ]]          
+                }}], 
+            ['OS=="windows"', {
+                "sources": [ 
+                    'dummy.cpp'
+                ],
+
+            ]
+        ],
+        'include_dirs': [
+            "<!@(node -p \"require('node-addon-api').include\")"
+        ],
+        'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"]
     }]
 }
