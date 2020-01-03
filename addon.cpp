@@ -3,8 +3,6 @@
 using namespace Napi;
 using namespace std;
 
-// TODO: sudo apt-get install libglib2.0-dev
-
 auto v8_string_to_gtk_string(const string& str) {
 	auto gtk_string = static_cast<char*>(g_malloc(str.length() + 1));
 	strcpy(gtk_string, str.c_str());
