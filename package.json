@@ -13,12 +13,18 @@
     "clean": "node-gyp clean"
   },
   "types": "gtk-utils.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uriegel/gtk-utils.git"
+  },  
   "author": "Uwe Riegel",
   "license": "MIT",
   "keywords": [
     "cpp",
+    "node-js",
     "addon"
   ],
+  "homepage": "https://github.com/uriegel/gtk-utils#readme",
   "dependencies": {
     "node-addon-api": "^2.0.0"
   }
